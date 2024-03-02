@@ -1,50 +1,53 @@
-footer p  span{
-    color: red;
+footer p span {
+  color: red;
+  font-size: 30px;
 }
 
-footer p{
-    font-size: 20px;
+footer p {
+  font-size: 20px;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: cursive;
-    font-size: 16px;
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    flex-wrap: wrap;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
+  font-size: 16px;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
-footer{
-    position: absolute;
-    bottom: 0px;
-    font-weight: bold;
+footer {
+  position: absolute;
+  bottom: 0px;
+  font-weight: bold;
 }
 
-header{
-    color: green;
+header {
+  color: green;
 }
 
-td,th,table{
-    border: 2px solid black;
-    border-collapse: collapse;
-    text-align: center;
-    padding: 10px;
-    color:darkblue;
+table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 10px;
+  color: darkblue;
 }
 
-th{
-    color: black;
-    font-weight: bold;
+th {
+  color: black;
+  font-weight: bold;
 }
 
-
-@media screen and (max-width:700px) {
-    table{
-        width: 1rem;
-    }
+@media (max-width: 600px) {
+  table {
+    width: 90vw;
+    height: 80vh;
+  }
 }
