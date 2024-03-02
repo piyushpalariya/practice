@@ -10,7 +10,7 @@ footer p {
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-family: cursive;
   font-size: 16px;
@@ -21,8 +21,6 @@ body {
 }
 
 footer {
-  position: absolute;
-  bottom: 0px;
   font-weight: bold;
 }
 
@@ -45,9 +43,24 @@ th {
   font-weight: bold;
 }
 
-@media (max-width: 600px) {
-  table {
-    width: 90vw;
-    height: 80vh;
+@media (min-device-width: 750px) and (max-device-width: 1200px) {
+  table{
+    width: 80vw;
+    height: 50vh;
   }
 }
+
+@media (min-device-width: 500px) and (max-device-width: 750px) {
+  table{
+    width: 80vw;
+    height: 25vh;
+  }
+}
+
+@media (max-device-width: 500px) {
+  table{
+    width: 80vw;
+    height: 15vh;
+  }
+}
+
