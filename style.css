@@ -43,6 +43,7 @@ th {
   font-weight: bold;
 }
 
+/*
 @media (min-device-width: 750px) and (max-device-width: 1200px) {
   table{
     width: 80vw;
@@ -55,12 +56,13 @@ th {
     width: 80vw;
     height: 25vh;
   }
-}
 
+  
 @media (max-device-width: 500px) {
   table{
     width: 80vw;
     height: 15vh;
   }
 }
+
 

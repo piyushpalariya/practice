@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML forms</title>
+  </head>
+  <body>
+    <header>
+      <h1>registration form</h1>
+    </header>
+    <main>
+      <form>
+        <div id="name">
+          <div class="nam">
+            <img src="assets/person_icon.svg" />
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="first name"
+            />
+          </div>
+          <div class="nam lnam">
+            <img src="assets/person_icon.svg" />
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              placeholder="last name"
+            />
+          </div>
+        </div>
+        <div class="em">
+          <img src="assets/email.svg"  id="svg"/>
+          <input type="email" name="email" id="email" placeholder="email" />
+        </div>
+        <div id="gender">
+          <input type="radio" id="male" name="gender" />
+          <label for="male">male</label>
+          <input type="radio" id="female" name="gender" />
+          <label for="female">female</label>
+        </div>
+        <div id="password">
+          <div id="pass">
+            <img src="assets/lock.svg" />
+            <input type="password" name="password" placeholder="password" />
+          </div>
+          <div id="conpass">
+            <img src="assets/lock.svg" />
+            <input
+              type="password"
+              name="password"
+              placeholder="confirm password"
+            />
+          </div>
+        </div>
+        <select name="country" id="country">
+          <option value="india" selected>india</option>
+          <option value="united states">united states</option>
+          <option value="canada">canada</option>
+          <option value="italy">italy</option>
+        </select>
+
+        <div id="tandc">
+          <input type="checkbox" id="conditions" />
+          <label for="conditions">I accept the terms and conditions</label>
+        </div>
+        <input type="submit" value="submit" id="submit" />
+      </form>
+    </main>
+
+    <footer>
+      <p>made with <span>&hearts;</span> by piyush</p>
+    </footer>
+    <link rel="stylesheet" href="form.css" />
+  </body>
+</html>
