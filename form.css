@@ -37,7 +37,7 @@ form {
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
-  height: 30vh;
+  flex-wrap: wrap;
 }
 
 form #name {
@@ -46,33 +46,16 @@ form #name {
 
 img {
   max-width: 16px;
-  border: 5px solid black;
-  border-radius: 5px 0px 0px 5px ;
+  border: 3px solid black;
+  border-radius: 5px 0px 0px 5px;
   object-fit: contain;
   fill: blue;
 }
 
-#svg{
-    fill: red;
+#svg {
+  fill: yellow;
 }
 
-#submit{
-  background-color: blue;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  text-align: center;
-  font-weight: bold;
-  margin-top: 10px;
-  font-size: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#submit:hover{
-    background-color: brown;
-    cursor: pointer;
-}
 #tandc {
   display: flex;
   justify-content: start;
@@ -83,7 +66,7 @@ img {
 #country {
   font-size: 20px;
   width: 50%;
-  border: 5px solid black;
+  border: 3px solid black;
   border-radius: 5px;
 }
 
@@ -94,10 +77,10 @@ option {
   display: flex;
   flex-direction: column;
   margin-top: 5px;
-  max-width: 50%;
 }
 
-#pass,#conpass{
+#pass,
+#conpass {
   display: flex;
   margin-bottom: 20px;
 }
@@ -105,7 +88,6 @@ option {
 .em {
   display: flex;
   margin-top: 10px;
-  max-width: 50%;
 }
 
 .nam {
@@ -118,11 +100,136 @@ option {
 
 input {
   font-size: 20px;
-  border: 5px solid black;
+  border: 3px solid black;
   border-radius: 0px 5px 5px 0px;
   border-left: 0px;
 }
 
 #name {
   width: 100%;
+}
+
+#submit {
+  background-color: blue;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px;
+}
+
+#submit:hover {
+  background-color: brown;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) and (min-width: 600px) {
+  #name {
+    display: flex;
+    flex-direction: column;
+  }
+  .lnam {
+    margin: 0px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  body {
+    font-size: 20px;
+  }
+  .em,
+  #password {
+    width: 100%;
+  }
+  #country {
+    width: 95%;
+  }
+  .nam {
+    margin-bottom: 20px;
+  }
+  .em {
+    margin-top: 0px;
+  }
+  main {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 600px) and (min-width: 450px) {
+  h1 {
+    font-size: 35px;
+  }
+  body {
+    font-size: 20px;
+  }
+  #name {
+    display: flex;
+    flex-direction: column;
+  }
+  .lnam {
+    margin-left: 0px;
+  }
+  .nam {
+    margin-bottom: 20px;
+  }
+  .em {
+    margin-top: 0px;
+  }
+  main {
+    padding: 15px;
+  }
+  input {
+    max-width: 100%;
+  }
+  #country {
+    width: 100%;
+  }
+  #tandc {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+@media (max-width: 450px) and (min-width: 320px) {
+  h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  body {
+    font-size: 20px;
+  }
+  #name {
+    display: flex;
+    flex-direction: column;
+  }
+  .lnam {
+    margin-left: 0px;
+  }
+  .nam {
+    margin-bottom: 20px;
+  }
+  .em {
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+  main {
+    padding: 15px;
+  }
+  #tandc {
+    flex-direction: column;
+    align-items: start;
+    max-width: 90%;
+  }
+  input,
+  #country {
+    font-size: 16px;
+  }
+  #country {
+    width: 85%;
+  }
 }
