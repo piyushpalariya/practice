@@ -164,9 +164,13 @@ input {
     flex-direction: column;
     align-items: start;
   }
+  #gender{
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px) and (min-width:350px) {
   h1 {
     font-size: 35px;
     text-align: center;
@@ -189,6 +193,7 @@ input {
   }
   main {
     padding: 15px;
+    margin: 0px 200px;
   }
   input {
     max-width: 100%;
@@ -199,5 +204,9 @@ input {
   #tandc {
     flex-direction: column;
     align-items: start;
+  }
+  #gender{
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 }
