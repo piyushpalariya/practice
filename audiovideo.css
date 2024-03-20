@@ -30,3 +30,49 @@ main{
     align-items: center;
     justify-content: center;
 }
+
+audio{
+    border: 2px solid blue;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+video{
+    border: 2px solid black;
+    border-radius: 15px;
+    object-fit:cover;
+    background-color: black;
+}
+
+@media (max-width: 900px)
+{
+    h1{
+        font-size: 20px;
+        margin-top: 25px;
+    }
+    video{
+        width: 360px;
+        height: 144px;
+        object-fit: cover;
+        margin-top: 20px;
+    }
+} 
+
+@media (max-width: 450px)
+{
+    h1{
+        font-size: 20px;
+        margin-top: 25px;
+    }
+    video{
+        width: 144px;
+        height: 81px;
+        object-fit: cover;
+        margin-top: 20px;
+    }
+    audio{
+        max-width: 150px;
+        max-height: 20px;
+        margin-top: 10px;
+    }
+} 
