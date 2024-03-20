@@ -109,7 +109,7 @@ input {
   width: 100%;
 }
 
-#submit {
+#submit #reset {
   background-color: blue;
   color: white;
   padding: 5px 10px;
@@ -208,6 +208,10 @@ input {
   #gender {
     margin-top: 5px;
     margin-bottom: 5px;
+  }
+  main{
+    max-width: 70vw;
+    
   }
 }
 
